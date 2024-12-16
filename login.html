@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up and Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <div class="container right-panel-active">
+    <div class="container__form container--signup">
+      <form action="process.php" method="post" class="form" id="form1">
+        <h2 class="form__title">Sign Up</h2>
+        <input type="text" placeholder="Username" class="input" id="user" name="username" required>
+        <input type="email" placeholder="Email" class="input" id="email-signup" name="email" required>
+        <input type="password" placeholder="Password" class="input" id="password-signup" name="password" required>
+        <button type="submit" class="btn">Sign Up</button>
+        <p id="signup-error" class="error-message"></p>
+      </form>
+    </div>
+    <div class="container__form container--signin">
+      <form action="login.php" method="post" class="form" id="form2">
+        <h2 class="form__title">Sign In</h2>
+        <input type="email" placeholder="Email" class="input" id="email-signin" name="email" required>
+        <input type="password" placeholder="Password" class="input" id="password-signin" name="password" required>
+        <a href="#" class="link">Forgot your password?</a>
+        <button type="submit" class="btn">Sign In</button>
+        <p id="signin-error" class="error-message"></p>
+      </form>
+    </div>
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+         <button class="btn" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
